@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas — DWII</title>
+  </head>
+  <body>
+    <h1>Desenvolvimento Web II</h1>
+
+    <form action="resposta.php" method="POST">
+      <label for="nome">Nome do Aluno:</label><br />
+      <input type="text" id="nome" name="nome" required /><br /><br />
+
+      <label for="nota1">1ª Nota:</label><br />
+      <input
+        type="number"
+        id="nota1"
+        name="nota1"
+        min="0"
+        max="10"
+        step="0.1"
+        required
+      /><br /><br />
+
+      <label for="nota2">2ª Nota:</label><br />
+      <input
+        type="number"
+        id="nota2"
+        name="nota2"
+        min="0"
+        max="10"
+        step="0.1"
+        required
+      /><br /><br />
+
+      <input type="submit" value="Calcular Média" />
+    </form>
+  </body>
+</html>
